@@ -15,7 +15,7 @@ const CursorThumbnail = ({
   gradient?: string;
 }) => (
   <div
-    className={`absolute inset-0 overflow-hidden rounded-xl ${gradient ?? "bg-gradient-to-br from-muted to-muted/60"}`}
+    className={`absolute inset-0 overflow-hidden rounded-xl ${gradient ?? "bg-linear-to-br from-muted to-muted/60"}`}
   >
     {children}
   </div>

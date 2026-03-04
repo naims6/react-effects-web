@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* for theme toggle script */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var s=localStorage.getItem("theme");var d;if(s==="dark")d=true;else if(s==="light")d=false;else d=!window.matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.classList.toggle("dark",d);})();`,
